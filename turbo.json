@@ -10,10 +10,15 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
-    "type-check": {
-      "dependsOn": ["^type-check"]
+    "typecheck": {
+      "dependsOn": ["^typecheck"]
     },
     "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
+    "dev:watch": {
       "cache": false,
       "persistent": true
     },

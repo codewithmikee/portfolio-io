@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev": "cd apps/web && pnpm dev",
+    "dev:all": "turbo dev",
+    "dev:watch": "turbo run dev:watch",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "type-check": "turbo run type-check",
-    "clean": "turbo run clean",
     "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean",
     "lint:fix": "turbo run lint -- --fix",
     "shadcn": "turbo run add-shadcn-component --"
   },

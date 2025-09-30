@@ -16,6 +16,7 @@
   "dependencies": {
     "@workspace/ui": "workspace:*",
     "@workspace/shared": "workspace:*",
+    "@workspace/portfolio-ui": "workspace:*",
     "lucide-react": "catalog:ui",
     "next": "catalog:react",
     "next-themes": "catalog:react",
