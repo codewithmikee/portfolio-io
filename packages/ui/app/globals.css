@@ -1,8 +1,4 @@
 @import "tailwindcss";
-@source "../../../apps/**/*.{ts,tsx}";
-@source "../../../components/**/*.{ts,tsx}";
-@source "../**/*.{ts,tsx}";
-
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -153,17 +149,6 @@
   color: rgb(255, 255, 255) !important;
 }
 
-/* Remove all shadows for PDF export */
-.pdf-export,
-.pdf-export *,
-.pdf-export *::before,
-.pdf-export *::after {
-  box-shadow: none !important;
-  text-shadow: none !important;
-  filter: none !important;
-  drop-shadow: none !important;
-}
-
 .pdf-export.dark,
 .pdf-export.dark * {
   --background: rgb(23, 23, 23) !important;
@@ -190,17 +175,6 @@
   --chart-3: rgb(249, 115, 22) !important;
   --chart-4: rgb(236, 72, 153) !important;
   --chart-5: rgb(239, 68, 68) !important;
-}
-
-/* Remove all shadows for dark mode PDF export */
-.pdf-export.dark,
-.pdf-export.dark *,
-.pdf-export.dark *::before,
-.pdf-export.dark *::after {
-  box-shadow: none !important;
-  text-shadow: none !important;
-  filter: none !important;
-  drop-shadow: none !important;
 }
 
 @layer base {

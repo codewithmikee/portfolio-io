@@ -32,6 +32,8 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   featured: boolean;
+  keyFeatures?: string[];
+  keyAchievements?: string[];
 }
 
 export interface Experience {
@@ -42,6 +44,14 @@ export interface Experience {
   endDate: string;
   description: string;
   technologies: string[];
+  employmentType?:
+    | "full-time"
+    | "part-time"
+    | "freelancer"
+    | "owner"
+    | "contract"
+    | "intern";
+  keyAchievements?: string[];
 }
 
 export interface Education {

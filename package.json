@@ -11,6 +11,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "typecheck": "turbo run typecheck",
     "clean": "turbo run clean",
+    "clean:src": "find packages/shared/src -name '*.js' -o -name '*.d.ts' -o -name '*.d.ts.map' -delete",
     "lint:fix": "turbo run lint -- --fix",
     "shadcn": "turbo run add-shadcn-component --"
   },

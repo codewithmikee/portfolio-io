@@ -17,7 +17,8 @@
   },
   "scripts": {
     "build": "tsc -b",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && find src -name '*.js' -o -name '*.d.ts' -o -name '*.d.ts.map' -delete",
+    "clean:src": "find src -name '*.js' -o -name '*.d.ts' -o -name '*.d.ts.map' -delete",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --fix",
