@@ -1,6 +1,6 @@
 import type React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
-import type { DeveloperProfile } from "../lib/mock-data";
+import type { DeveloperProfile } from "@workspace/shared/types";
 
 const formatDate = (dateString: string) => {
   if (dateString === "Present") return "Present";

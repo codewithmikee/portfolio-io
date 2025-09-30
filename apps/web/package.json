@@ -1,34 +1,37 @@
 {
-  "name": "web",
-  "version": "0.0.1",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "typecheck": "tsc --noEmit",
-    "clean": "rimraf .next",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "dependencies": {
-    "@workspace/ui": "workspace:*",
-    "@workspace/shared": "workspace:*",
-    "@workspace/portfolio-ui": "workspace:*",
-    "lucide-react": "catalog:ui",
-    "next": "catalog:react",
-    "next-themes": "catalog:react",
-    "react": "catalog:react",
-    "react-dom": "catalog:react"
-  },
-  "devDependencies": {
-    "@types/node": "catalog:types",
-    "@types/react": "catalog:react",
-    "@types/react-dom": "catalog:react",
-    "@workspace/eslint-config": "workspace:^",
-    "@workspace/typescript-config": "workspace:*",
-    "typescript": "catalog:types"
-  }
+	"name": "web",
+	"version": "0.0.1",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"lint:fix": "next lint --fix",
+		"typecheck": "tsc --noEmit",
+		"clean": "rimraf .next",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+	},
+	"dependencies": {
+		"@workspace/ui": "workspace:*",
+		"@workspace/shared": "workspace:*",
+		"@workspace/portfolio-ui": "workspace:*",
+		"lucide-react": "catalog:ui",
+		"next": "catalog:react",
+		"next-themes": "catalog:react",
+		"react": "catalog:react",
+		"react-dom": "catalog:react",
+		"tailwind-merge": "catalog:styling",
+		"tw-animate-css": "catalog:styling"
+	},
+	"devDependencies": {
+		"@tailwindcss/postcss": "catalog:styling",
+		"@types/node": "catalog:types",
+		"@types/react": "catalog:react",
+		"@types/react-dom": "catalog:react",
+		"@workspace/eslint-config": "workspace:^",
+		"@workspace/typescript-config": "workspace:*",
+		"typescript": "catalog:types"
+	}
 }

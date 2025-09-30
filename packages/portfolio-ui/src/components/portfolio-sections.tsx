@@ -9,7 +9,7 @@ import {
   GraduationCap,
   Award,
 } from "lucide-react";
-import type { DeveloperProfile } from "../lib/mock-data";
+import type { DeveloperProfile } from "@workspace/shared/types";
 
 const cn = (...classes: (string | undefined | null | false)[]) => {
   return classes.filter(Boolean).join(" ");

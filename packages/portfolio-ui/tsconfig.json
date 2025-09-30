@@ -2,11 +2,12 @@
   "extends": "@workspace/typescript-config/react-library.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "rootDir": "src",
+    "rootDir": "..",
     "outDir": "dist",
     "paths": {
       "@workspace/portfolio-ui/*": ["./src/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@workspace/shared/*": ["../../packages/shared/src/*"]
     }
   },
   "include": ["src"],
