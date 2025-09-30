@@ -1,0 +1,11 @@
+---
+alwaysApply: true
+---
+
+Effective using of pnpm catalog for unified package version consistency.
+Rule 1. each package.json dependencies/devdependencies if the package is listed under catalogs of pnpm-workspace, based on the following pnpm catalog rules use catalog as value.
+Case 1: if catalog is not grouped meaning it is under "catalog:" section
+value should be "catalog:", eg. for tsx "tsx": "catalog:"
+Case 2: If grouped use grouped suffix as "catalog:group_name" for eg. for packages grouped under react the value should be "catalog:react"
+
+Rule 2: if you are tasked with task that require to install new dependency, First check if it is on catalog/s list if exist use it as value, else add to catalog to proper grouping or global catalog: (if no grouping needed) and use it from there
