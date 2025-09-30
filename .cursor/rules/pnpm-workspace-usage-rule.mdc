@@ -9,3 +9,5 @@ value should be "catalog:", eg. for tsx "tsx": "catalog:"
 Case 2: If grouped use grouped suffix as "catalog:group_name" for eg. for packages grouped under react the value should be "catalog:react"
 
 Rule 2: if you are tasked with task that require to install new dependency, First check if it is on catalog/s list if exist use it as value, else add to catalog to proper grouping or global catalog: (if no grouping needed) and use it from there
+
+Rule 3: The catalog feature is only applies for external packages not internal once (workspace packages should not be included)
