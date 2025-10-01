@@ -115,7 +115,40 @@ export const CVTemplate: React.FC<{
               </p>
             </div>
 
-            {/* 2. Skills */}
+            {/* 2. Core Competencies */}
+            <div className={getSectionClass()}>
+              <h2 className="text-lg font-semibold text-foreground border-b border-primary pb-2">
+                Core Competencies
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                <div>
+                  <h3 className="font-medium text-foreground mb-2">
+                    Core Technologies
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Laravel, Next.js, TypeScript, Microservices, RESTful APIs
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-medium text-foreground mb-2">
+                    Cloud & DevOps
+                  </h3>
+                  <p className="text-muted-foreground">
+                    AWS (EC2, S3), Docker, Azure, Redis, RabbitMQ
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-medium text-foreground mb-2">
+                    Databases
+                  </h3>
+                  <p className="text-muted-foreground">
+                    PostgreSQL, MySQL, Prisma ORM, MongoDB
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 3. Skills */}
             <div className={getSectionClass()}>
               <h2 className="text-lg font-semibold text-foreground border-b border-primary pb-2">
                 Skills
@@ -153,7 +186,7 @@ export const CVTemplate: React.FC<{
               </div>
             </div>
 
-            {/* 3. Experience */}
+            {/* 4. Experience */}
             <div className={getSectionClass()}>
               <h2 className="text-lg font-semibold text-foreground border-b border-primary pb-2">
                 Professional Experience
@@ -201,7 +234,7 @@ export const CVTemplate: React.FC<{
               </div>
             </div>
 
-            {/* 4. Key Projects */}
+            {/* 5. Key Projects */}
             {profile.projects.length > 0 && (
               <div className={getSectionClass()}>
                 <h2 className="text-lg font-semibold text-foreground border-b border-primary pb-2">
@@ -260,7 +293,7 @@ export const CVTemplate: React.FC<{
               </div>
             )}
 
-            {/* 5. Education */}
+            {/* 6. Education */}
             <div className={getSectionClass()}>
               <h2 className="text-lg font-semibold text-foreground border-b border-primary pb-2">
                 Education
@@ -285,7 +318,7 @@ export const CVTemplate: React.FC<{
               </div>
             </div>
 
-            {/* 6. Certifications & Awards */}
+            {/* 7. Certifications & Awards */}
             {profile.certifications.length > 0 && (
               <div className={getSectionClass()}>
                 <h2 className="text-lg font-semibold text-foreground border-b border-primary pb-2">
@@ -341,7 +374,38 @@ export const CVTemplate: React.FC<{
           <p className="text-muted-foreground">{profile.personalInfo.bio}</p>
         </div>
 
-        {/* 2. Skills */}
+        {/* 2. Core Competencies */}
+        <div className={getSectionClass()}>
+          <h2 className="text-xl font-semibold text-foreground mb-3">
+            Core Competencies
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+            <div>
+              <h3 className="font-medium text-foreground mb-2">
+                Core Technologies
+              </h3>
+              <p className="text-muted-foreground">
+                Laravel, Next.js, TypeScript, Microservices, RESTful APIs
+              </p>
+            </div>
+            <div>
+              <h3 className="font-medium text-foreground mb-2">
+                Cloud & DevOps
+              </h3>
+              <p className="text-muted-foreground">
+                AWS (EC2, S3), Docker, Azure, Redis, RabbitMQ
+              </p>
+            </div>
+            <div>
+              <h3 className="font-medium text-foreground mb-2">Databases</h3>
+              <p className="text-muted-foreground">
+                PostgreSQL, MySQL, Prisma ORM, MongoDB
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 3. Skills */}
         <div className={getSectionClass()}>
           <h2 className="text-xl font-semibold text-foreground mb-3">Skills</h2>
           {style === "ats-friendly" ? (
@@ -394,7 +458,7 @@ export const CVTemplate: React.FC<{
           )}
         </div>
 
-        {/* 3. Professional Experience */}
+        {/* 4. Professional Experience */}
         <div className={getSectionClass()}>
           <h2 className="text-xl font-semibold text-foreground mb-3">
             Professional Experience
@@ -452,7 +516,7 @@ export const CVTemplate: React.FC<{
           </div>
         </div>
 
-        {/* 4. Key Projects */}
+        {/* 5. Key Projects */}
         {profile.projects.length > 0 && (
           <div className={getSectionClass()}>
             <h2 className="text-xl font-semibold text-foreground mb-3">
@@ -510,7 +574,7 @@ export const CVTemplate: React.FC<{
           </div>
         )}
 
-        {/* 5. Education */}
+        {/* 6. Education */}
         <div className={getSectionClass()}>
           <h2 className="text-xl font-semibold text-foreground mb-3">
             Education
@@ -543,7 +607,7 @@ export const CVTemplate: React.FC<{
           </div>
         </div>
 
-        {/* 6. Certifications & Awards */}
+        {/* 7. Certifications & Awards */}
         {profile.certifications.length > 0 && (
           <div className={getSectionClass()}>
             <h2 className="text-xl font-semibold text-foreground mb-3">

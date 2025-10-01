@@ -42,7 +42,14 @@ export const mockProfiles: DeveloperProfile[] = [
       { name: "PostgreSQL", level: 75, category: "Database" },
       { name: "MongoDB", level: 70, category: "Database" },
       { name: "AWS", level: 70, category: "DevOps" },
-      { name: "Docker", level: 65, category: "DevOps" },
+      { name: "Docker", level: 85, category: "Tools" },
+      { name: "Git", level: 90, category: "Tools" },
+      { name: "VS Code", level: 95, category: "Tools" },
+      { name: "Figma", level: 80, category: "Tools" },
+      { name: "Communication", level: 90, category: "Soft Skills" },
+      { name: "Problem Solving", level: 95, category: "Soft Skills" },
+      { name: "Team Leadership", level: 85, category: "Soft Skills" },
+      { name: "Time Management", level: 88, category: "Soft Skills" },
     ],
     projects: [
       {
@@ -184,6 +191,15 @@ export const mockProfiles: DeveloperProfile[] = [
       { name: "CSS/SCSS", level: 90, category: "Frontend" },
       { name: "Vue.js", level: 80, category: "Frontend" },
       { name: "Adobe XD", level: 85, category: "Design" },
+      { name: "Figma", level: 95, category: "Tools" },
+      { name: "Adobe XD", level: 85, category: "Tools" },
+      { name: "Sketch", level: 80, category: "Tools" },
+      { name: "InVision", level: 75, category: "Tools" },
+      { name: "Zeplin", level: 70, category: "Tools" },
+      { name: "Creative Thinking", level: 95, category: "Soft Skills" },
+      { name: "User Empathy", level: 90, category: "Soft Skills" },
+      { name: "Collaboration", level: 88, category: "Soft Skills" },
+      { name: "Presentation", level: 85, category: "Soft Skills" },
     ],
     projects: [
       {
@@ -255,7 +271,7 @@ export const mockProfiles: DeveloperProfile[] = [
       phone: "+251923213768",
       location: "Addis Ababa, Ethiopia",
       website: "https://codewithmikee.github.io",
-      bio: "Senior Full-Stack Developer with 5+ years of experience specializing in Laravel backend development and Next.js frontend applications. Proven expertise in building scalable web applications, RESTful APIs, and cross-platform mobile applications. Lead Developer at Migranium with strong background in payment integrations, real-time systems, and cloud deployment.",
+      bio: "Senior Full-Stack Developer with 5+ years of expertise in building and leading the development of scalable web applications using Laravel and Next.js. Proven track record in payment integrations, real-time systems, and cloud deployment (AWS, Azure) as a Lead Developer at Migranium. Specialized in microservices architecture, RESTful APIs, and cross-platform mobile applications with a focus on performance optimization and team leadership.",
       avatar:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
     },
@@ -287,7 +303,6 @@ export const mockProfiles: DeveloperProfile[] = [
       { name: "Docker", level: 80, category: "DevOps" },
       { name: "AWS", level: 75, category: "DevOps" },
       { name: "Redis", level: 75, category: "Database" },
-      { name: "RabbitMQ", level: 70, category: "Backend" },
       { name: "Prisma ORM", level: 80, category: "Database" },
       { name: "Twilio", level: 75, category: "Integrations" },
       { name: "Mailtrap", level: 75, category: "Integrations" },
@@ -295,6 +310,15 @@ export const mockProfiles: DeveloperProfile[] = [
       { name: "Google APIs", level: 70, category: "Integrations" },
       { name: "Microsoft Graph", level: 70, category: "Integrations" },
       { name: "Azure", level: 70, category: "DevOps" },
+      { name: "Docker", level: 80, category: "Tools" },
+      { name: "Git", level: 90, category: "Tools" },
+      { name: "VS Code", level: 95, category: "Tools" },
+      { name: "Postman", level: 85, category: "Tools" },
+      { name: "Insomnia", level: 80, category: "Tools" },
+      { name: "Leadership", level: 90, category: "Soft Skills" },
+      { name: "Mentoring", level: 85, category: "Soft Skills" },
+      { name: "Strategic Thinking", level: 88, category: "Soft Skills" },
+      { name: "Adaptability", level: 92, category: "Soft Skills" },
     ],
     projects: [
       {
@@ -432,6 +456,33 @@ export const mockProfiles: DeveloperProfile[] = [
           "Created intelligent repository management features",
         ],
       },
+      {
+        id: "project-packarma",
+        title: "Packarma.com Platform (Freelance)",
+        description:
+          "Freelance project for Packarma.com involving complete frontend migration from React to Next.js with TypeScript, API optimization, and real-time feature implementation. Successfully improved SEO ranking by 40% and reduced server response time by 50%.",
+        image:
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+        technologies: ["Laravel", "Next.js", "TypeScript", "React", "MySQL"],
+        liveUrl: "https://packarma.com",
+        githubUrl: "https://github.com/codewithmikee/packarma-platform",
+        featured: true,
+        keyFeatures: [
+          "Complete React to Next.js migration with TypeScript",
+          "Optimized Laravel API endpoints for better performance",
+          "Real-time features using Laravel Echo and WebSockets",
+          "Enhanced user authentication with role-based access control",
+          "Advanced admin dashboard with analytics and reporting",
+          "SEO optimization and performance improvements",
+        ],
+        keyAchievements: [
+          "Improved SEO ranking by 40% through Next.js migration",
+          "Reduced server response time by 50% through API optimization",
+          "Successfully implemented real-time features with WebSockets",
+          "Enhanced user experience with modern frontend architecture",
+          "Delivered project on time and within budget as freelance contractor",
+        ],
+      },
     ],
     experience: [
       {
@@ -459,25 +510,6 @@ export const mockProfiles: DeveloperProfile[] = [
           "Implemented comprehensive security system with JWT, 2FA, and SSO",
           "Built real-time notification system supporting 500+ concurrent users",
           "Created dynamic form management system with 10+ field types",
-        ],
-      },
-      {
-        id: "exp-packarma",
-        company: "Packarma.com",
-        position: "Full-Stack Developer",
-        startDate: "",
-        endDate: "",
-        description:
-          "Migrated React frontend to Next.js with TypeScript, improving SEO ranking by 40%. Optimized Laravel API endpoints reducing server response time by 50%. Implemented real-time features using Laravel Echo and WebSockets.",
-        technologies: ["Laravel", "Next.js", "TypeScript", "React", "MySQL"],
-        employmentType: "freelancer",
-        keyAchievements: [
-          "Migrated React frontend to Next.js with TypeScript, improving SEO ranking by 40%",
-          "Optimized Laravel API endpoints reducing server response time by 50%",
-          "Implemented real-time features using Laravel Echo and WebSockets",
-          "Enhanced user authentication system with role-based access control",
-          "Developed admin dashboard with advanced analytics and reporting features",
-          "Improved overall application performance and user experience",
         ],
       },
       {
