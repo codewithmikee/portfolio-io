@@ -52,7 +52,7 @@ export const CVTemplate: React.FC<{
   const getSectionClass = () => {
     switch (style) {
       case "minimal":
-        return "space-y-6 border-b border-border pb-6 last:border-b-0";
+        return "space-y-6 pb-6 last:border-b-0";
       case "creative":
         return "space-y-6 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-lg";
       default:
@@ -127,22 +127,6 @@ export const CVTemplate: React.FC<{
                   </h3>
                   <p className="text-muted-foreground">
                     Laravel, Next.js, TypeScript, Microservices, RESTful APIs
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-medium text-foreground mb-2">
-                    Cloud & DevOps
-                  </h3>
-                  <p className="text-muted-foreground">
-                    AWS (EC2, S3), Docker, Azure, Redis, RabbitMQ
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-medium text-foreground mb-2">
-                    Databases
-                  </h3>
-                  <p className="text-muted-foreground">
-                    PostgreSQL, MySQL, Prisma ORM, MongoDB
                   </p>
                 </div>
               </div>
@@ -295,7 +279,7 @@ export const CVTemplate: React.FC<{
 
             {/* 6. Education */}
             <div className={getSectionClass()}>
-              <h2 className="text-lg font-semibold text-foreground border-b border-primary pb-2">
+              <h2 className="text-lg font-semibold text-foreground  pb-2">
                 Education
               </h2>
               <div className="space-y-4">
@@ -388,20 +372,6 @@ export const CVTemplate: React.FC<{
                 Laravel, Next.js, TypeScript, Microservices, RESTful APIs
               </p>
             </div>
-            <div>
-              <h3 className="font-medium text-foreground mb-2">
-                Cloud & DevOps
-              </h3>
-              <p className="text-muted-foreground">
-                AWS (EC2, S3), Docker, Azure, Redis, RabbitMQ
-              </p>
-            </div>
-            <div>
-              <h3 className="font-medium text-foreground mb-2">Databases</h3>
-              <p className="text-muted-foreground">
-                PostgreSQL, MySQL, Prisma ORM, MongoDB
-              </p>
-            </div>
           </div>
         </div>
 
@@ -457,6 +427,8 @@ export const CVTemplate: React.FC<{
             </div>
           )}
         </div>
+
+        <br />
 
         {/* 4. Professional Experience */}
         <div className={getSectionClass()}>

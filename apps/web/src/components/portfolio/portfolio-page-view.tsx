@@ -106,7 +106,7 @@ function PortfolioPageView(props: PortfolioPageViewProps) {
 
       <div className="w-full">
         <div className="w-full">
-          <div className="bg-white shadow-lg">
+          <div className="bg-white">
             {isCV ? (
               <CVTemplate profile={profile} style={cvTemplate.style} />
             ) : (
@@ -119,7 +119,7 @@ function PortfolioPageView(props: PortfolioPageViewProps) {
         </div>
       </div>
 
-      <div className="fixed z-50 bottom-0 left-0 right-0">
+      {/* <div className="fixed z-50 bottom-0 left-0 right-0">
         <Card>
           <CardHeader>
             <CardTitle>Debug</CardTitle>
@@ -132,7 +132,7 @@ function PortfolioPageView(props: PortfolioPageViewProps) {
             </p>
           </CardContent>
         </Card>
-      </div>
+      </div> */}
     </div>
   );
 }
