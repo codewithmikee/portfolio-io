@@ -1,6 +1,15 @@
 "use client";
-import PortfolioUiDemo from "@/components/portfolio-ui-demo";
+import { DefaultPortfolio } from "@workspace/ui/lib/mock-data";
+import PortfolioPageView from "@/components/portfolio/portfolio-page-view";
 
 export default function Page() {
-  return <PortfolioUiDemo />;
+  const { portfolio, defaultPortfolioTemplate, defaultCvTemplate } =
+    DefaultPortfolio;
+  return (
+    <PortfolioPageView
+      profile={portfolio}
+      template={defaultPortfolioTemplate}
+      cvTemplate={defaultCvTemplate}
+    />
+  );
 }

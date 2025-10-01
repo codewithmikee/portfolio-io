@@ -11,7 +11,7 @@ import {
   CertificationsSection,
 } from "@workspace/ui/components/portfolios/portfolio-sections";
 import { mockProfiles, portfolioTemplates } from "@workspace/ui/lib/mock-data";
-import { PortfolioNavbar } from "./portfolio-navbar";
+import { PortfolioNavbar } from "./portfolio-demo-navbar";
 
 interface SectionConfig {
   id: string;

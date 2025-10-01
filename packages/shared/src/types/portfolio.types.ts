@@ -83,11 +83,9 @@ export interface DeveloperProfile {
   certifications: Award[];
 }
 
-export interface PortfolioTemplate {
+export interface SectionConfig {
   id: string;
   name: string;
-  description: string;
-  preview: string;
-  category: "portfolio" | "cv";
-  style: string;
+  enabled: boolean;
+  order: number;
 }

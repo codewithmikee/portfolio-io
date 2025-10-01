@@ -2,3 +2,4 @@
 
 // Export portfolio-specific types
 export * from "./portfolio.types";
+export * from "./portfolio-ui-config.types";

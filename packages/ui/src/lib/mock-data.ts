@@ -1,4 +1,8 @@
-import { DeveloperProfile, PortfolioTemplate } from "@workspace/shared/types";
+import {
+  DeveloperProfile,
+  PortfolioTemplate,
+  CvTemplate,
+} from "@workspace/shared/types";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 export const mockProfiles: DeveloperProfile[] = [
@@ -603,7 +607,6 @@ export const portfolioTemplates: PortfolioTemplate[] = [
     description: "Clean and simple design focusing on content",
     preview:
       "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop",
-    category: "portfolio",
     style: "minimal",
   },
   {
@@ -612,7 +615,6 @@ export const portfolioTemplates: PortfolioTemplate[] = [
     description: "Bold and artistic design with animations",
     preview:
       "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=300&fit=crop",
-    category: "portfolio",
     style: "creative",
   },
   {
@@ -621,7 +623,6 @@ export const portfolioTemplates: PortfolioTemplate[] = [
     description: "Corporate-friendly design for business use",
     preview:
       "https://images.unsplash.com/photo-1486312338219-ce68e2c6b686?w=400&h=300&fit=crop",
-    category: "portfolio",
     style: "professional",
   },
   {
@@ -630,7 +631,6 @@ export const portfolioTemplates: PortfolioTemplate[] = [
     description: "Developer-focused with code snippets and technical details",
     preview:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
-    category: "portfolio",
     style: "technical",
   },
   {
@@ -639,16 +639,17 @@ export const portfolioTemplates: PortfolioTemplate[] = [
     description: "Vibrant and energetic design with bold colors",
     preview:
       "https://images.unsplash.com/photo-1541462608143-632531db7ed4?w=400&h=300&fit=crop",
-    category: "portfolio",
     style: "colorful",
   },
+];
+
+export const cvTemplates: CvTemplate[] = [
   {
     id: "classic-cv",
     name: "Classic CV",
     description: "Traditional single-column resume format",
     preview:
       "https://images.unsplash.com/photo-1586281380349-6326b3ff858d?w=400&h=300&fit=crop",
-    category: "cv",
     style: "classic",
   },
   {
@@ -657,7 +658,6 @@ export const portfolioTemplates: PortfolioTemplate[] = [
     description: "Contemporary two-column layout with visual elements",
     preview:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
-    category: "cv",
     style: "modern",
   },
   {
@@ -666,7 +666,6 @@ export const portfolioTemplates: PortfolioTemplate[] = [
     description: "Ultra-clean design with plenty of white space",
     preview:
       "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop",
-    category: "cv",
     style: "minimal",
   },
   {
@@ -675,7 +674,6 @@ export const portfolioTemplates: PortfolioTemplate[] = [
     description: "Optimized for Applicant Tracking Systems",
     preview:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
-    category: "cv",
     style: "ats-friendly",
   },
   {
@@ -684,7 +682,14 @@ export const portfolioTemplates: PortfolioTemplate[] = [
     description: "Artistic design for creative professionals",
     preview:
       "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop",
-    category: "cv",
     style: "creative",
   },
 ];
+
+export const DefaultPortfolio = {
+  portfolio: mockProfiles[2]!,
+  defaultPortfolioTemplate:
+    portfolioTemplates.find((t) => t.id === "modern-portfolio") ||
+    portfolioTemplates[0]!,
+  defaultCvTemplate: cvTemplates.find((t) => t.id === "ats-cv")!,
+};

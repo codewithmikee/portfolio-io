@@ -21,39 +21,11 @@ import {
 } from "@workspace/ui/components/dropdown-menu";
 import { Button } from "@workspace/ui/components/button";
 import { Switch } from "@workspace/ui/components/switch";
-
-interface PersonalInfo {
-  name: string;
-  title: string;
-  email: string;
-  phone: string;
-  location: string;
-  website: string;
-  bio: string;
-  avatar: string;
-}
-
-interface DeveloperProfile {
-  id: string;
-  personalInfo: PersonalInfo;
-  [key: string]: any;
-}
-
-interface PortfolioTemplate {
-  id: string;
-  name: string;
-  description: string;
-  preview: string;
-  category: "portfolio" | "cv";
-  style: string;
-}
-
-interface SectionConfig {
-  id: string;
-  name: string;
-  enabled: boolean;
-  order: number;
-}
+import {
+  DeveloperProfile,
+  PortfolioTemplate,
+  SectionConfig,
+} from "@workspace/shared/types";
 
 interface NavbarProps {
   profiles: DeveloperProfile[];
@@ -92,7 +64,7 @@ export function PortfolioNavbar({
 
   // Filter templates based on current view
   const filteredTemplates = templates.filter((t) =>
-    isCV ? t.category === "cv" : t.category === "portfolio"
+    isCV ? t.style === "cv" : t.style === "portfolio"
   );
 
   const themes = [
