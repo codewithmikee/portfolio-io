@@ -276,8 +276,7 @@ export const mockProfiles: DeveloperProfile[] = [
       location: "Addis Ababa, Ethiopia",
       website: "https://codewithmikee.github.io",
       bio: "Senior Full-Stack Developer with 5+ years of expertise in building and leading the development of scalable web applications using Laravel and Next.js. Proven track record in payment integrations, real-time systems, and cloud deployment (AWS, Azure) as a Lead Developer at Migranium. Specialized in microservices architecture, RESTful APIs, and cross-platform mobile applications with a focus on performance optimization and team leadership.",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      avatar: "/mikias-birhanu-profile.jpeg",
     },
     socialLinks: [
       {
@@ -608,8 +607,7 @@ export const mockProfiles: DeveloperProfile[] = [
       location: "Addis Ababa, Ethiopia",
       website: "https://codewithmikee.github.io",
       bio: "Senior PHP/Laravel Developer with 5+ years of experience building scalable web applications, specializing in real-time features, complex third-party integrations (Twilio, Google/Microsoft Calendar, SAML SSO), and advanced scheduling systems. I possess a strong understanding of both backend and frontend technologies, enabling me to bridge the gap between server-side logic and user experience. This full-stack perspective allows me to deliver robust, cohesive solutions that enhance user engagement and operational efficiency.",
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      avatar: "/mikias-birhanu-profile.jpeg",
     },
     socialLinks: [
       {
@@ -669,7 +667,7 @@ export const mockProfiles: DeveloperProfile[] = [
           "Redis",
         ],
         liveUrl: "https://migranium.com",
-        githubUrl: "https://github.com/codewithmikee/migranium-platform",
+        // githubUrl: "https://github.com/codewithmikee/migranium-platform",
         featured: true,
         keyFeatures: [
           "Real-Time Communication System with Pusher WebSockets",
