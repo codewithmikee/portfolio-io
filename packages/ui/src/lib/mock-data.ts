@@ -598,6 +598,224 @@ export const mockProfiles: DeveloperProfile[] = [
       },
     ],
   },
+  {
+    id: "profile-php-laravel",
+    personalInfo: {
+      name: "Mikiyas Birhanu",
+      title: "PHP/Laravel Developer",
+      email: "mkbirhanu@gmail.com",
+      phone: "+251923213768",
+      location: "Addis Ababa, Ethiopia",
+      website: "https://codewithmikee.github.io",
+      bio: "Senior PHP/Laravel Developer with 5+ years of experience building scalable web applications, specializing in real-time features, complex third-party integrations (Twilio, Google/Microsoft Calendar, SAML SSO), and advanced scheduling systems. Proven ability to deliver robust solutions that enhance user engagement and operational efficiency.",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    },
+    socialLinks: [
+      {
+        platform: "GitHub",
+        url: "https://github.com/codewithmikee",
+        icon: Github,
+      },
+      {
+        platform: "LinkedIn",
+        url: "https://linkedin.com/in/mikiyas-birhanu-957b71131",
+        icon: Linkedin,
+      },
+      {
+        platform: "Blog",
+        url: "https://codewithmikee.github.io",
+        icon: Twitter,
+      },
+    ],
+    skills: [
+      { name: "PHP 8+", level: 95, category: "Backend" },
+      { name: "Laravel", level: 95, category: "Backend" },
+      { name: "Laravel Eloquent", level: 90, category: "Backend" },
+      { name: "Laravel Queues", level: 85, category: "Backend" },
+      { name: "Laravel Events", level: 85, category: "Backend" },
+      { name: "Laravel Broadcasting", level: 85, category: "Backend" },
+      { name: "RESTful APIs", level: 90, category: "Backend" },
+      { name: "JavaScript", level: 85, category: "Frontend" },
+      { name: "Vue.js", level: 80, category: "Frontend" },
+      { name: "HTML5", level: 90, category: "Frontend" },
+      { name: "CSS3", level: 85, category: "Frontend" },
+      { name: "Pusher WebSockets", level: 90, category: "Real-Time" },
+      { name: "Laravel Echo", level: 85, category: "Real-Time" },
+      { name: "Twilio SMS API", level: 90, category: "Communications" },
+      { name: "Mailtrap", level: 85, category: "Communications" },
+      { name: "Laravel Mail", level: 90, category: "Communications" },
+      { name: "Google Calendar API", level: 85, category: "Integrations" },
+      { name: "Microsoft Graph API", level: 80, category: "Integrations" },
+      { name: "SAML SSO", level: 85, category: "Integrations" },
+      { name: "MySQL", level: 90, category: "Database" },
+      { name: "Redis", level: 85, category: "Database" },
+      { name: "Database Optimization", level: 90, category: "Database" },
+      { name: "Git", level: 90, category: "Tools & DevOps" },
+      { name: "Docker", level: 80, category: "Tools & DevOps" },
+      { name: "Linux", level: 85, category: "Tools & DevOps" },
+      { name: "Composer", level: 90, category: "Tools & DevOps" },
+    ],
+    projects: [
+      {
+        id: "project-migranium-php",
+        title: "Migranium AI Healthcare Platform",
+        description:
+          "Developed and maintained core features for Migranium's AI-powered healthcare operations platform, focusing on real-time communication, seamless scheduling, and secure enterprise access.",
+        image:
+          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+        technologies: [
+          "PHP 8+",
+          "Laravel",
+          "Pusher WebSockets",
+          "Twilio SMS API",
+          "Google Calendar API",
+          "Microsoft Graph API",
+          "SAML SSO",
+          "MySQL",
+          "Redis",
+        ],
+        liveUrl: "https://migranium.com",
+        githubUrl: "https://github.com/codewithmikee/migranium-platform",
+        featured: true,
+        keyFeatures: [
+          "Real-Time Communication System with Pusher WebSockets",
+          "Dynamic SMS & Email Solutions with Twilio and Mailtrap",
+          "Advanced Calendar & Scheduling Engine with Google/Microsoft APIs",
+          "Enterprise Authentication with SAML SSO",
+          "Laravel Echo-based frontend real-time components",
+        ],
+        keyAchievements: [
+          "Accelerated implementation of new real-time features by 60%",
+          "Reduced scheduling conflicts by 30% through intelligent algorithms",
+          "Implemented dynamic phone number purchase/release system",
+          "Built unified calendar interface for multiple providers",
+        ],
+      },
+      {
+        id: "project-technical-blog",
+        title: "Technical Blog - Laravel Insights",
+        description:
+          "Author of a technical blog sharing insights on Laravel best practices, deep dives into Pusher WebSockets implementation, and tutorials on third-party API integrations (Google Calendar, Twilio).",
+        image:
+          "https://images.unsplash.com/photo-1486312338219-ce68e2c6b686?w=600&h=400&fit=crop",
+        technologies: [
+          "Laravel",
+          "Pusher WebSockets",
+          "Google Calendar API",
+          "Twilio",
+          "Technical Writing",
+        ],
+        liveUrl: "https://codewithmikee.github.io",
+        githubUrl: "https://github.com/codewithmikee",
+        featured: true,
+        keyFeatures: [
+          "Laravel best practices and advanced techniques",
+          "Pusher WebSockets implementation guides",
+          "Third-party API integration tutorials",
+          "Google Calendar API deep dives",
+          "Twilio SMS integration examples",
+        ],
+        keyAchievements: [
+          "Demonstrates passion for knowledge sharing",
+          "Establishes expertise within developer community",
+          "Provides practical, real-world examples",
+          "Covers complex integration scenarios",
+        ],
+      },
+    ],
+    experience: [
+      {
+        id: "exp-migranium-php",
+        company: "Migranium",
+        position: "Senior Laravel Developer",
+        startDate: "2023-10",
+        endDate: "Present",
+        description:
+          "Developed and maintained core features for Migranium's AI-powered healthcare operations platform, focusing on real-time communication, seamless scheduling, and secure enterprise access.",
+        technologies: [
+          "PHP 8+",
+          "Laravel",
+          "Pusher WebSockets",
+          "Twilio SMS API",
+          "Google Calendar API",
+          "Microsoft Graph API",
+          "SAML SSO",
+          "MySQL",
+          "Redis",
+        ],
+        employmentType: "full-time",
+        keyAchievements: [
+          "Engineered Pusher-based WebSocket system for live notifications, accelerating new real-time features by 60%",
+          "Implemented Twilio-based SMS solution with dynamic phone number purchase/release and webhook configuration",
+          "Built Mailtrap-based emailing system with customizable view files for consistent client communications",
+          "Designed advanced scheduling and waitlist management system with Google Calendar and Microsoft Graph API integration",
+          "Reduced scheduling conflicts by 30% through intelligent waitlist algorithms",
+          "Implemented SAML SSO solution for enterprise clients enabling secure single sign-on authentication",
+        ],
+      },
+      {
+        id: "exp-previous-company-php",
+        company: "Previous Company",
+        position: "PHP/Laravel Developer",
+        startDate: "2020-03",
+        endDate: "2023-09",
+        description:
+          "Optimized database queries and implemented caching strategies, developed RESTful APIs for internal and third-party integrations, and contributed to queue-based file processing systems.",
+        technologies: [
+          "PHP",
+          "Laravel",
+          "MySQL",
+          "Redis",
+          "Laravel Horizon",
+          "RESTful APIs",
+        ],
+        employmentType: "full-time",
+        keyAchievements: [
+          "Optimized database queries and implemented caching strategies, improving application response time by 35%",
+          "Developed and maintained RESTful APIs for internal and third-party integrations",
+          "Contributed to queue-based file processing system using Redis and Laravel Horizon",
+          "Implemented advanced database optimization techniques",
+        ],
+      },
+    ],
+    education: [
+      {
+        id: "edu-aait-php",
+        institution: "Addis Ababa Institute of Technology",
+        degree: "Bachelor of Science",
+        field: "Computer Science",
+        startDate: "2014-09",
+        endDate: "2018-06",
+      },
+    ],
+    certifications: [
+      {
+        id: "cert-laravel-advanced",
+        title: "Laravel Advanced Development",
+        issuer: "Laravel Community",
+        date: "2023-08",
+        description:
+          "Advanced certification in Laravel framework including Eloquent ORM, Queues, Events, and Broadcasting",
+      },
+      {
+        id: "cert-php-expert",
+        title: "PHP Expert Developer",
+        issuer: "PHP Community",
+        date: "2023-06",
+        description:
+          "Expert level certification in PHP 8+ development and best practices",
+      },
+      {
+        id: "cert-websockets",
+        title: "Real-Time Web Applications",
+        issuer: "WebSocket Academy",
+        date: "2023-04",
+        description:
+          "Specialized certification in WebSocket implementation and real-time communication systems",
+      },
+    ],
+  },
 ];
 
 export const portfolioTemplates: PortfolioTemplate[] = [
@@ -687,9 +905,9 @@ export const cvTemplates: CvTemplate[] = [
 ];
 
 export const DefaultPortfolio = {
-  portfolio: mockProfiles[2]!,
+  portfolio: mockProfiles[3]!, // PHP/Laravel Developer profile
   defaultPortfolioTemplate:
-    portfolioTemplates.find((t) => t.id === "modern-portfolio") ||
+    portfolioTemplates.find((t) => t.id === "professional-portfolio") ||
     portfolioTemplates[0]!,
   defaultCvTemplate: cvTemplates.find((t) => t.id === "ats-cv")!,
 };
